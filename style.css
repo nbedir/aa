@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    height: 100vh;
+}
+header img{
+    width: 15rem;
+}
+header{
+ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    gap: 2rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+nav a:hover{
+    color: black;
+    text-shadow: 2px 2px 22px white ;
+    transition: all 0.5s;
+
+}
+#welcomesec{
+   
+    background: url(images/main.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.welcometext{
+    width: 90vw;
+    color: white;
+    margin:5rem auto;
+    padding: 5rem 10rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+.welcometext h1{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    
+}
+#about{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: black;
+    
+}
+#about img{
+    flex-basis: 50%;
+    width: 100%;
+    margin-right: 5%;
+   
+
+}
+.about-text{
+    font-family:sans-serif;
+    margin-left: 5%;
+    text-align: center;
+
+}
+.about-text h1{
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+.about-text span{
+    color: red;
+}
+#battle{
+    background:radial-gradient(rgba(0, 0, 0, 0.068) 0%, black 70%), url(images/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.heading{
+    font-family: sans-serif;
+    text-align: center;
+}
+.heading h5{
+    padding-top:5% ;
+    text-transform:uppercase;
+    margin-bottom: 2%;
+}
+.heading h1{
+    font-size: 3rem;
+}
+.boxes {
+    width: 620px;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 300px;
+    height: 130px;
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'open-sans';
+  }
+  .box h1 {
+    color: crimson;
+  }
+  .box p {
+    font-size: 20px;
+  }
+  .box:last-child {
+    width: 600px;
+
+  }  
+/*OPINION ALANI*/
+#opinions{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+   
+
+}
+.opinions-text{
+    
+    max-width: 450px;
+    margin: 5rem;
+    font-family: sans-serif;
+    padding: 3rem;
+
+}
+.opinions-text p{
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+.opinions-text h1{
+    margin: 0.5rem;
+    font-size: 3rem;
+}
+.opinions-text button{
+    margin-top: 3rem;
+    padding: 0.7rem;
+    color: white;
+    background-color: red;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.opinions-text button:hover{
+    color: red;
+    background-color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.cards{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 50px;
+   
+}
+.card{
+    width: 400px;
+    background-color: rgb(65, 61, 61);
+    border-radius: 10px;
+    
+}
+.user{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.user-info{
+    color: red;
+
+}
+.comment{
+    text-align: center;
+}
+.card:nth-child(2){
+    align-self: flex-start;
+}
+/*MEDIA ALANI*/
+@media (max-width:1100px) {
+    section{
+        height: 120vh;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #about img{
+        width: 50%;
+        height: 40%;
+    }
+    header nav{
+        gap:0.5rem
+    }
+    .boxes{
+        display: block;
+    }
+    .box:last-child{
+        font-size: 0.3rem;
+        
+        width:450px;
+    }
+    .box h1{
+        font-size: 1.5rem;
+    }
+    #opinions{
+        display: block;
+        padding-top: 0;
+    }
+    .opinions-text {
+        margin: 0 auto;
+      }
+      .cards {
+        gap: 5px;
+        margin: 0 ;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+      }
+      
+      
+      
+    
+}
